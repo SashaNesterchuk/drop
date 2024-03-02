@@ -1,0 +1,18 @@
+@import "../../styles/functions.scss";
+.page {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+
+  .dashboard-small-cards-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: rem(26px);
+  }
+
+  .dashboard-second-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(26px);
+  }
+}

@@ -1,0 +1,16 @@
+.search {
+  width: 100%;
+  color: #8f9bba;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.28px;
+  margin: 0;
+
+  input {
+    &::placeholder {
+      opacity: 1 !important;
+    }
+  }
+}

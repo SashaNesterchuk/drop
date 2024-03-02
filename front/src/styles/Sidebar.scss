@@ -1,0 +1,58 @@
+@import "variables";
+
+.layout_menu {
+  position: fixed;
+  width: 260px;
+  background-color: $bg_white;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 2px 4px 0px rgba(165, 163, 174, 0.3);
+
+  .title {
+    padding: 20px 14px 20px 24px;
+    color: $cl-primary;
+    font-size: 22px;
+  }
+  .items {
+    .item {
+      padding: 0;
+      margin: 0 14px;
+
+      .item_button {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 6px;
+
+        .item_label {
+          margin: 0;
+          span {
+            color: $cl-secondary;
+            font-size: 15px !important;
+          }
+        }
+        .item_icon {
+          min-width: 0 !important;
+          margin-right: 8px;
+          color: $icon-color-secondary;
+        }
+
+        &.Mui-selected {
+          background-color: $icon-color-primary !important;
+          .item_label {
+            span {
+              color: white;
+            }
+          }
+          .item_icon {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

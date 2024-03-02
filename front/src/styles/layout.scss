@@ -1,0 +1,20 @@
+@import "Sidebar";
+
+.layout-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 260px auto;
+  align-items: stretch;
+  background-color: $background-page;
+
+  .layout-page-wrapper {
+    background-color: $background-page;
+    padding-top: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
+
+    .layout-page-container {
+      padding-top: 26px;
+    }
+  }
+}
